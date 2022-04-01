@@ -47,7 +47,9 @@ Route::get('detail/{id}',[ProductController::class,'detail']);
 Route::get('category/detail/{id}',[ProductController::class,'detail']);
 //filter
 Route::view('filter','showProduct/filter');
-Route::post('/filter',[ProductController::class,'filterProduct']);
+Route::post('filter',[ProductController::class,'filterProduct']);
+Route::view('compare','showProduct/compare');
+Route::post('compare',[ProductController::class,'compareProduct']);
 
 
 // cart

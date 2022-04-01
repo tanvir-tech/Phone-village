@@ -11,10 +11,10 @@
         <div class="col-lg-6">
 
 
-
+            ID : {{$item['id']}}
             <h2 class="text-primary">{{$item['name']}}</h2>
             <h5 class="text-danger">{{$item['price']}} BDT</h5>
-            <p>Author : {{$item['description']}}</p>
+            <p>{{$item['description']}}</p>
             {{-- <a href="#" class="btn btn-success btn-sm">Buy now</a><br><br> --}}
 
 <form action="/cart" method="POST">

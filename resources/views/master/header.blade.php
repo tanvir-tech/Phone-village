@@ -47,6 +47,9 @@ if(Session::has('user')){
         <li class="nav-item">
             <a class="nav-link" href="/filter">Filter</a>
         </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/compare">Compare</a>
+        </li>
     
       </ul>
 

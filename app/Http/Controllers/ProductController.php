@@ -92,6 +92,24 @@ class ProductController extends Controller
     }
 
 
+    function compareProduct(Request $req){
+
+        $id1 = $req->input('id1');
+        $id2 = $req->input('id2');
+
+        $item1 = Product::find($id1);
+        $item2 = Product::find($id2);
+
+        if(is_null($item1) || is_null($item2)){
+            echo "Not found comparison";
+            return redirect('compare');
+        }
+
+        return view('showProduct/compareResult',['item1'=>$item1,'item2'=>$item2]);
+
+    }
+
+
 
     
 // Uncomplete
