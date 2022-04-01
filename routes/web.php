@@ -31,6 +31,10 @@ Route::post('/registration',[UserController::class,'registration']);
 Route::get('/forgetPass', function () {return view('auth.forgetPass');});
 Route::get('/resetPass', function () {return view('auth.resetPass');});
 
+//profile
+Route::view('profile','profile');
+
+
 // product 
 Route::get('/insertProduct', function () {
     return view('admin/insertProduct');

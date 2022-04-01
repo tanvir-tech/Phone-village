@@ -44,4 +44,9 @@ class UserController extends Controller
         return redirect('login');
 
     }
+
+
+    function profile(Request $req){
+        
+    }
 }
